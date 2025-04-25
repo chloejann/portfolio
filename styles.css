@@ -1,0 +1,40 @@
+body {
+    background-color: #FEF3E7;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-links>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header-links>ul>li {
+    display: inline-block;
+    padding: 0px 24px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #22031F;
+}
+
+.contact-links>img {
+    height: 30px;
+    width: 30px;
+    padding: 0px 4px;
+    object-fit: cover;
+
+}
