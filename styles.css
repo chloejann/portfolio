@@ -1,15 +1,17 @@
 html {
     font-family: 'Inter';
+    width: 100%;
+    margin: 0;
 }
 
 body {
     background-color: #FEF3E7;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -18,7 +20,6 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 0px 6px;
-    border-style: dashed;
 }
 
 .header-links>ul {
@@ -49,8 +50,9 @@ a {
 .main {
     display: flex;
     flex-direction: column;
-    border-style: dashed;
+    flex-grow: 1;
     padding: 180px;
+    height: 340px;
 }
 
 .main-section {
@@ -85,8 +87,13 @@ a {
 }
 
 .footer {
-    height: 90px;
+    height: 150px;
     width: 100%;
+    bottom: 0;
     background-color: #22031F;
-    border-style: dashed;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #FEF3E7;
 }
