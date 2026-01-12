@@ -33,9 +33,26 @@ header {
 
 }
 
-a {
+.header-a {
     text-decoration: none;
     color: #22031F;
+    display: inline-block;
+    position: relative;
+}
+
+.header-a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #22031F;
+    transition: width .25s ease-out;
+}
+
+.header-a:hover::after {
+    width: 100%;
 }
 
 .contact-links>a>img {
@@ -51,7 +68,7 @@ a {
     flex-direction: column;
     flex-grow: 1;
     padding: 180px;
-    height: 340px;
+    height: 300px;
 }
 
 .main-section {
@@ -67,17 +84,17 @@ a {
     justify-content: space-between;
 }
 
-.main-buttons>button {
+.main-buttons>.button {
     font-family: 'Inter';
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     background-color: #22031F;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     border-radius: 16px;
-    padding: 18px;
-    height: 70px;
-    width: 140px;
+    padding: 30px;
+
     margin: 10px;
 }
 
