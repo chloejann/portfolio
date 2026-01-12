@@ -10,8 +10,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh
 }
 
 header {
@@ -65,11 +64,69 @@ header {
 
 .main {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 180px;
-    height: 300px;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 150px;
+
 }
+
+.main-about {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 120px;
+    gap: 120px;
+
+}
+
+.port-photo {
+    max-width: 30%;
+    max-height: auto;
+    width: 30%;
+    height: auto;
+    min-width: 500px;
+    min-height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.about-para {
+    width: 70%;
+    min-width: 600px;
+    overflow: hidden;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .main-about {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 40px 20px;
+    gap: 30px;
+    }
+
+    .port-photo {
+    width: 80px;
+    max-width: 350px;
+    }
+
+.about-para {
+    width: 100%;
+    }
+}
+
 
 .main-section {
     padding: 12px;
@@ -81,7 +138,7 @@ header {
 
 .main-buttons {
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
 }
 
 .main-buttons>.button {
@@ -103,12 +160,11 @@ header {
 }
 
 .footer {
-    height: 150px;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #22031F;
     padding: 40px;
-    align-items: center;
-    justify-items: center;
     text-align: center;
     color: #FEF3E7;
 }
