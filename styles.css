@@ -168,6 +168,35 @@ header {
     display: flex;
 }
 
+.main-exp {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 150px;
+}
+
+.about-para>h1 {
+    color: #22031F
+}
+
+.port-photo {
+    border-style: outset;
+    border-color: #22031F;
+}
+
+.main-proj {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 150px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
