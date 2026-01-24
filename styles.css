@@ -2,6 +2,7 @@ html {
     font-family: 'Inter';
     width: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -69,7 +70,6 @@ header {
 .main {
     display: flex;
     flex-direction: column;
-    flex: 1;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
@@ -77,15 +77,23 @@ header {
 
 }
 
+.main-text>h1 {
+    color: #AA3C3C;
+    font-size: 40px;
+}
+
+.main-text>p{
+    font-size: 34px;
+}
+
 .main-about {
     display: flex;
-    flex-direction: row;
-    flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
     padding: 150px;
-    gap: 120px;
+    gap: 50px;
 
 }
 
@@ -94,50 +102,58 @@ header {
     max-height: auto;
     width: 30%;
     height: auto;
-    min-width: 500px;
+    min-width: 400px;
     min-height: auto;
     flex-shrink: 0;
 
 }
 
 .about-para {
-    width: 70%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
     overflow: hidden;
     font-size: 20px;
     justify-content: center;
     align-items: center;
+    gap: 120px;
+}
+
+.about-para>h1 {
+    color: #22031F
 }
 
 @media (max-width: 1200px) {
     .main-about {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    padding: 40px 20px;
-    gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .about-para {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
     }
 
     .port-photo {
-    width: 80%;
-    max-width: 350px;
+        width: 80%;
+        max-width: 350px;
+        min-width: unset;
     }
 
-.about-para {
-    width: 100%;
-    text-align: center;
+    .about-text {
+        width: 100%;
+        text-align: center;
     }
 }
 
 .main-section {
     padding: 12px;
+    text-align: center;
 }
 
 .main-text>p {
     font-size: 25px;
-    text-align: center;
 }
 
 .main-buttons {
@@ -178,10 +194,6 @@ header {
     padding: 150px;
 }
 
-.about-para>h1 {
-    color: #22031F
-}
-
 .port-photo {
     border-style: outset;
     border-color: #22031F;
@@ -196,6 +208,91 @@ header {
     min-height: 60vh;
     padding: 150px;
 }
+
+.main-exp {
+    display: flex;
+    min-height: 60vh;
+    padding: 150px;
+    gap: 40px;
+
+}
+
+.section-header {
+    color: #AA3C3C;
+    font-size: 40px;
+}
+
+.exp-card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #22031F;
+    border-radius: 25px;
+    padding: 40px;
+    min-width: unset;
+    max-width: 40%;
+    transition: border-color 0.3s ease;
+
+}
+
+.exp-card:hover {
+    border-color: #AA3C3C;
+    cursor: pointer;
+}
+
+.card-header-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-header>h3 {
+    color: #AA3C3C;
+    font-size: 32px;
+    padding-bottom: 10px;
+
+}
+
+.card-header>p {
+    font-size: 24px;
+
+}
+
+.card-date {
+    font-size: 24px;
+
+}
+
+.card-header h3,
+.card-header p,
+.card-date {
+    margin: 0;
+
+
+}
+
+.card-desc {
+    font-size: 20px;
+
+}
+
+.card-desc>h3 {
+    color: #AA3C3C;
+}
+
+.card-desc ul {
+    margin-bottom: 24px;
+}
+
 
 .footer {
     display: flex;
