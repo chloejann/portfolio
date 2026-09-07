@@ -8,13 +8,15 @@
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Inter'
             rel='stylesheet'>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
     </head>
 
     <body>
 
         <header class="nav">
             <h2 id="headerLogo"><a href="index.html" class="header-a">chloe
-                    sacil</a></h2>
+                    sacil.</a></h2>
             <div class="header-links">
                 <ul>
                     <li><a href="#main-about" class="header-a">about</a></li>
@@ -34,163 +36,179 @@
             </div>
         </header>
 
+        <nav class="floating-nav" id="floatingNav">
+            <span class="floating-nav-logo">chloe sacil</span>
+            <div class="floating-nav-links">
+                <a href="#main-about">about</a>
+                <span>·</span>
+                <a href="#main-exp">experience</a>
+                <span>·</span>
+                <a href="#main-projs">projects</a>
+                <span>·</span>
+                <a href="#main-skills">skills</a>
+            </div>
+        </nav>
+
         <div class="main">
-            <div class="main-section">
+            <div class="main-accent"></div>
+            <div class="main-content">
+                <div class="terminal" id="heroTerminal">
+                    <div class="muted tw-line" data-text="chloe@sacil ~ %">chloe@sacil
+                        ~ %</div>
+                    <div><span class="cmd tw-line"
+                            data-text="whoami">whoami</span></div>
+                    <div class="muted tw-line"
+                        data-text="&gt; aspiring app/web ui/ux designer and developer">&gt;
+                        aspiring app/web ui/ux designer and
+                        developer</div>
+                    <div class="muted"><span class="tw-line"
+                            data-text="&gt; currently finishing a degree in business information systems">&gt;
+                            currently finishing a degree in
+                            business information systems</span><span
+                            class="cursor"></span></div>
+                </div>
                 <div class="main-text">
                     <h1>hello, welcome to my website.</h1>
                     <p>enjoy your stay here!</p>
                 </div>
             </div>
-            <div class="radio">
-                <div class="playlist">
-                    <div class="playlist-cover">
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="main-buttons">
-                <a href="#main-about" class="button">about</a>
-                <a href="#main-exp" class="button">experience</a>
-                <a href="#main-projs" class="button">projects</a>
-                <a href="#main-skills" class="button">skills</a>
-            </div>
-
         </div>
 
-        <div class="main-about" id="main-about">
-            <h2 class="section-header">about me.</h2>
-            <div class="about-para">
+        <div class="main-about reveal-section" id="main-about">
+            <div class="about-dossier">
                 <img class="port-photo" src="./img/portfolio_photo.jpg"
                     alt="portfolio_photo">
-                <div class="about-text">
-                    <h1>Hi, I'm Chloe Sacil</h1>
-                    <h2>Aspiring App/Web UI/UX Designer and Developer</h2>
-                    <hr>
-                    <p>Most IT grads like coffee; well me too, though I would
-                        also
-                        like a well-documented API and a clean UI.</p>
-                    <p>Currently finishing my degree in Business Information
-                        Systems, I’ve spent the last few years bridging the gap
-                        between 'that’s a cool idea' and 'that actually works.'
-                        My
-                        journey started at Republic Poly, where a web design
-                        module
-                        turned into a passion for building digital experiences.
-                        I've
-                        also had the chance to specifically use the Power
-                        Platform to
-                        turn 'boring manual tasks' into sleek, automated
-                        applications during my internship and part-time
-                        stint.</p>
-                    <p>I also spent 5 months in Australia (UOW) on exchange,
-                        which
-                        taught me how to adapt to new environments.</p>
-                    <p>Offline, I’m usually gaming, watching movies, or curating
-                        the
-                        perfect Spotify playlist.</p>
+                <div class="about-dossier-body">
+                    <h2 class="section-header">about me.</h2>
+                    <div class="about-fields">
+                        <span class="about-field-label">role</span>
+                        <span>aspiring app/web UI/UX designer + developer</span>
+                        <span class="about-field-label">education</span>
+                        <span>Business Information Systems, SIM&ndash;UOW
+                            (final year)</span>
+                        <span class="about-field-label">exchange</span>
+                        <span>5 months at UOW, Australia</span>
+                        <span class="about-field-label">off-duty</span>
+                        <span>gaming, movies, curating playlists</span>
+                    </div>
+                    <p class="about-pull">Most IT grads like coffee; well me
+                        too, though I would also like a well-documented API
+                        and a clean UI.</p>
                 </div>
             </div>
         </div>
 
-        <div class="main-exp" id="main-exp">
+        <div class="main-exp reveal-section" id="main-exp">
             <h2 class="section-header">experience.</h2>
-            <div class="exp-card">
-                <div class="card-header-text">
-                    <div class="card-header">
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <div class="timeline-date">may 2024 — aug 2024</div>
+                    <div class="timeline-marker">
+                        <span class="timeline-dot timeline-dot--active"></span>
+                    </div>
+                    <div class="timeline-content">
                         <h3>app developer</h3>
-                        <p>customer capital consulting</p>
+                        <p class="timeline-company">customer capital
+                            consulting</p>
+                        <p class="timeline-desc">Continued as a part-timer by
+                            taking ownership of solution deployment and
+                            delivering custom-built websites, while further
+                            refining UI/UX and CRM integrations for
+                            professional clients.</p>
+                        <div class="timeline-projects">
+                            <h4>projects done:</h4>
+                            <ul>
+                                <li>bus schedule mobile app</li>
+                                <ul>
+                                    <li>continued development till deployment to
+                                        client's environments</li>
+                                </ul>
+                                <li>navy duty scheduling mobile app</li>
+                                <ul>
+                                    <li>optimize shift assignments and personnel
+                                        scheduling</li>
+                                    <li>deployment into client's
+                                        environments</li>
+                                </ul>
+                            </ul>
+                        </div>
                     </div>
-                    <p class="card-date">may 2024 - aug 2024</p>
                 </div>
-
-                <div class="card-desc">
-                    <p>Continued as a part-timer by taking ownership of solution
-                        deployment and delivering custom-built websites, while
-                        further refining UI/UX and CRM integrations for
-                        professional
-                        clients.</p>
-                </div>
-                <div class="card-desc">
-                    <h3>projects done:</h3>
-                    <ul>
-                        <li>bus schedule mobile app</li>
-                        <ul>
-                            <li>continued development till deployment to client's environments</li>
-                        </ul>
-                        <li>navy duty scheduling mobile app</li>
-                        <ul>
-                            <li>optimize shift assignments and personnel
-                                scheduling</li>
-                            <li>deployment into client's environments</li>
-                        </ul>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="exp-card">
-                <div class="card-header-text">
-                    <div class="card-header">
+                <div class="timeline-entry">
+                    <div class="timeline-date">sep 2023 — feb 2024</div>
+                    <div class="timeline-marker">
+                        <span class="timeline-dot"></span>
+                    </div>
+                    <div class="timeline-content">
                         <h3>intern</h3>
-                        <p>customer capital consulting</p>
+                        <p class="timeline-company">customer capital
+                            consulting</p>
+                        <p class="timeline-desc">Designed and delivered custom
+                            Power Platform solutions by liaising with
+                            stakeholders to translate business requirements
+                            into intuitive UI/UX, automated Power Automate
+                            flows, and integrated Power BI dashboards.</p>
+                        <div class="timeline-projects">
+                            <h4>projects done:</h4>
+                            <ul>
+                                <li>bus schedule mobile app</li>
+                                <ul>
+                                    <li>real-time schedule updates for
+                                        regulars</li>
+                                    <li>live route tracking for drivers</li>
+                                </ul>
+                                <li>asset & vehicle management mobile app</li>
+                                <ul>
+                                    <li>automated military asset and vehicle
+                                        tracking</li>
+                                    <li>streamlined equipment loan and return
+                                        process</li>
+                                    <li>enhanced asset accountability and
+                                        logging</li>
+                                </ul>
+                            </ul>
+                        </div>
                     </div>
-                    <p class="card-date">sep 2023 - feb 2024</p>
-                </div>
-
-                <div class="card-desc">
-                    <p>Designed and delivered custom Power Platform solutions by
-                        liaising with stakeholders to translate business
-                        requirements into intuitive UI/UX, automated Power
-                        Automate
-                        flows, and integrated Power BI dashboards.</p>
-                </div>
-
-                <div class="card-desc">
-                    <h3>projects done:</h3>
-                    <ul>
-                        <li>bus schedule mobile app</li>
-                        <ul>
-                            <li>real-time schedule updates for regulars</li>
-                            <li>live route tracking for drivers</li>
-                        </ul>
-                        <li>asset & vehicle management mobile app</li>
-                        <ul>
-                            <li>automated military asset and vehicle
-                                tracking</li>
-                            <li>streamlined equipment loan and return
-                                process</li>
-                            <li>enhanced asset accountability and logging</li>
-                        </ul>
-                    </ul>
-
                 </div>
             </div>
         </div>
 
-        <div class="main-projs" id="main-projs">
+        <div class="main-skills reveal-section" id="main-skills">
+            <h2 class="section-header">skills.</h2>
+            <div class="skills-columns">
+                <div class="skills-col">
+                    <div class="skills-label">languages</div>
+                    <div class="skills-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <div class="skills-label">platforms &amp; tools</div>
+                    <div class="skills-list">
+                        <span>Bootstrap</span>
+                        <span>GitHub</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Azure Pipelines</span>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <div class="skills-label">power platform</div>
+                    <div class="skills-list">
+                        <span>MS Power Apps</span>
+                        <span>MS Power Automate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-projs reveal-section" id="main-projs">
             <h2 class="section-header">projects.</h2>
             <h1>stay tuned!</h1>
-        </div>
-
-        <div class="main-skills" id="main-skills">
-            <div class="skills-header">
-            <h2 class="section-header">skills.</h2>
-            <h3>what school and work has taught me so far.</h3>
-            </div>
-            <div class="skill-grid">
-                <h3>HTML5</h3>
-                <h3>CSS3</h3>
-                <h3>Bootstrap</h3>
-                <h3>JavaScript</h3>
-                <h3>Python</h3>
-                <h3>Java</h3>
-                <h3>GitHub</h3>
-                <h3>MySQL</h3>
-                <h3>MongoDB</h3>
-                <h3>Azure Pipelines</h3>
-                <h3>MS Power Apps</h3>
-                <h3>MS Power Automate</h3>
-            </div>
         </div>
 
         <div class="footer">
@@ -200,6 +218,69 @@
                 <p>2025 | chloe sacil</p>
             </div>
         </div>
+
+        <script>
+            (function () {
+                var reduceMotion = window.matchMedia &&
+                    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                if (!reduceMotion && 'IntersectionObserver' in window) {
+                    var sections = document.querySelectorAll('.reveal-section');
+                    sections.forEach(function (el) {
+                        el.style.opacity = '0';
+                        el.style.transform = 'translateY(24px)';
+                    });
+                    var revealObserver = new IntersectionObserver(function (entries, observer) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.style.opacity = '1';
+                                entry.target.style.transform = 'none';
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.15 });
+                    sections.forEach(function (el) { revealObserver.observe(el); });
+                }
+
+                var terminal = document.getElementById('heroTerminal');
+                if (terminal && !reduceMotion) {
+                    var lines = Array.prototype.slice.call(terminal.querySelectorAll('.tw-line'));
+                    lines.forEach(function (l) { l.textContent = ''; });
+                    var lineIndex = 0;
+                    function typeLine() {
+                        if (lineIndex >= lines.length) return;
+                        var el = lines[lineIndex];
+                        var text = el.getAttribute('data-text') || '';
+                        var charIndex = 0;
+                        var interval = setInterval(function () {
+                            charIndex++;
+                            el.textContent = text.slice(0, charIndex);
+                            if (charIndex >= text.length) {
+                                clearInterval(interval);
+                                lineIndex++;
+                                setTimeout(typeLine, 220);
+                            }
+                        }, 28);
+                    }
+                    typeLine();
+                }
+
+                var siteHeader = document.querySelector('header.nav');
+                var floatingNav = document.getElementById('floatingNav');
+                if (siteHeader && floatingNav && 'IntersectionObserver' in window) {
+                    var headerObserver = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                floatingNav.classList.remove('is-visible');
+                            } else {
+                                floatingNav.classList.add('is-visible');
+                            }
+                        });
+                    }, { threshold: 0 });
+                    headerObserver.observe(siteHeader);
+                }
+            })();
+        </script>
 
     </body>
 
